@@ -24,12 +24,12 @@ class Account:
         delete_account method delete a saved account from account_list
         """
 
-        Account.account_list.remove(self)
-    @classmethod
-    def find_by_name(cls,name):
-        for account in cls.account_list:
-             if account.account_name == name:
-                 return account
+    #     Account.account_list.remove(self)
+    # @classmethod
+    # def find_by_name(cls,name):
+    #     for account in cls.account_list:
+    #          if account.account_name == name:
+    #              return account
     
     @classmethod
     def account_exist(cls,name):
