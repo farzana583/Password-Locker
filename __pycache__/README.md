@@ -19,7 +19,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-<!-- ## Running unit tests## Copyright and License
+## Running unit tests## Copyright and License
 MIT License
 Copyright (c) [2020] [Farzana Isack]
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -37,4 +37,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-Copyright (c) {2020} **{Farzana Isack}** -->
+Copyright (c) {2020} **{Farzana Isack}**
