@@ -5,7 +5,7 @@ from account import Account # Importing the account class
 class TestAccount(unittest.TestCase):
     def setUp(self):
        
-        self.new_account = Account("Jeff","Musa","123456","jeff@m.com") # create Account object
+        self.new_account = Account("farzana","isack","123456","farzana@m.com") # create Account object
 
 
         def text_init(self)
@@ -13,10 +13,10 @@ class TestAccount(unittest.TestCase):
           test_init test case to test if the object is initialized properly
         '''
 
-        self.assertEqual(self.new_account.account_name,"Jeff")
-        self.assertEqual(self.new_account.user_name,"Musa")
+        self.assertEqual(self.new_account.account_name,"farzana")
+        self.assertEqual(self.new_account.user_name,"isack")
         self.assertEqual(self.new_account.password,"123456")
-        self.assertEqual(self.new_account.email,"jeff@m.co
+        self.assertEqual(self.new_account.email,"farzana@m.co"
 
 def text_save_account(self)
        '''

@@ -56,6 +56,6 @@ class Credentials:
         '''
         method that returns the credentials list
         '''
-        return cls.credentials_list    
+        return cls.credentials_list  
 
 
