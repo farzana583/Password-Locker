@@ -8,16 +8,30 @@ This project was generated with [Python3.8](https://github.com/farzana583/Passwo
  * Python
  * Flask
  
+ ## Live link
+* https://github.com/farzana583/Password-Locker
+## To get to the Website use the following:
+* Download the folder from the github
+* clone https://github.com/farzana583/Password-Locker
+* You can even Download zip the folder if you have problems with clone..
+* cd Password-locker
+* Open with code . or atom . depending on the text editor you are   using.
+## Functionality
+* To run test for this application
+        $ python3.8 user_test.py
+ * Open terminal and type the following commands
+        $ chmod +x Run.py
+        $./Run.py      
+## User Stories
+As a user 
+* Log in
+* Generate a more secure passwords
+* Search for saved passwords
+* Delete passwords
+## Contact Information 
+If you have any question or contributions, please email me at [farzanaisack@gmail.com]
 
-<!-- Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build. -->
 
 ## Running unit tests## Copyright and License
 MIT License
