@@ -42,7 +42,7 @@ def display_accounts():
  #_________________________________________CREDENTIALS____________________________________________________________________
 
 
-def create_credentials(credentials_name,usr_name_password,email):
+def create_credentials(credentials_name,usr_name,password,email):
     '''
     fuction to create a new account 
     '''
@@ -141,8 +141,9 @@ def main():
                         usr_name = input(f"{credentials_name} user name:")
                         print('\n')
                         print('*' * 20)
-                        pwd = input(f"{credentials_name} password:")
-                        save_credentials(create_credentials(credentials_name,u_name,pwd,e_address))
+                        password = input(f"{credentials_name} password:")
+                        email = input (f"{credentials_name} email:")
+                        save_credentials(create_credentials(credentials_name,usr_name,password,email))
                         print('\n')
                         print(f"A New {credentials_name} Account with the user name  {usr_name} has been created.")
                         print ('\n')
