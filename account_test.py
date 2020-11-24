@@ -8,7 +8,7 @@ class TestAccount(unittest.TestCase):
         self.new_account = Account("farzana","isack","123456","farzana@m.com") # create Account object
 
 
-        def text_init(self)
+    def text_init(self)
          '''
           test_init test case to test if the object is initialized properly
         '''
@@ -18,7 +18,7 @@ class TestAccount(unittest.TestCase):
         self.assertEqual(self.new_account.password,"123456")
         self.assertEqual(self.new_account.email,"farzana@m.co"
 
-def text_save_account(self)
+    def text_save_account(self)
        '''
         test_save_account test case to test if the account object is saved into
          the account list
@@ -27,11 +27,11 @@ def text_save_account(self)
         self.assertEqual(len(Account.account_list),1)  
 
 
- def tearDown(self):
-            '''
-            tearDown method that does clean up after each test case has run.
-            '''
-             Account.account_list = []    
+    def tearDown(self):
+        '''
+        tearDown method that does clean up after each test case has run.
+        '''
+        Account.account_list = []    
 
 
     def test_save_multiple_account(self):
