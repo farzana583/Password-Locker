@@ -13,7 +13,7 @@ This project was generated with [Python3.8](https://github.com/farzana583/Passwo
 ## To get to the Website use the following:
 * Download the folder from the github
 * clone https://github.com/farzana583/Password-Locker
-* You can even Download zip the folder if you have problems with clone..
+* You can even Download zip the folder if you have problems with clone.
 * cd Password-locker
 * Open with code . or atom . depending on the text editor you are   using.
 ## Functionality
