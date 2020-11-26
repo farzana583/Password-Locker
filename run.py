@@ -1,4 +1,5 @@
 #!/usr/bin/env python3.8
+
 from account import Account
 from credentials import Credentials
 
@@ -80,7 +81,12 @@ def display_credentials():
     '''
     return Credentials.display_credentials() 
 
-
+def generate_password(self):
+    ''' 
+    function tht generates password randomely
+    '''
+    auto_password = Credentials.generate_password(self)
+    return auto_password
 
 
 def main():
@@ -141,11 +147,25 @@ def main():
                         usr_name = input(f"{credentials_name} user name:")
                         print('\n')
                         print('*' * 20)
-                        password = input(f"{credentials_name} password:")
+                        # password = (f"{credentials_name} password:")
                         email = input (f"{credentials_name} email:")
+                        password = ''
+                        while True:
+                            print(" TP - Type your own pasword?..\n GP - Generate from our random Password")
+                            pass_choice = input().lower().strip()
+                            if pass_choice == 'tp':
+                                print("\n")
+                                password = input("Enter Password\n")
+                                break
+                            elif pass_choice == 'gp':
+                                password = generate_password(password)
+                                break
+                            else:
+                                print("Invalid password")
+                      
                         save_credentials(create_credentials(credentials_name,usr_name,password,email))
                         print('\n')
-                        print(f"A New {credentials_name} Account with the user name  {usr_name} has been created.")
+                        print(f"A New {credentials_name} Account with the user name  {usr_name} and your  password is {password } has been created.")
                         print ('\n')
                     elif short_code == 'dc':
                          if display_credentials():

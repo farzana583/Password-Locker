@@ -8,18 +8,18 @@ class TestAccount(unittest.TestCase):
         self.new_account = Account("farzana","isack","123456","farzana@m.com") # create Account object
 
 
-    def text_init(self)
-         '''
-          test_init test case to test if the object is initialized properly
+    def text_init(self):
+        '''
+        test_init test case to test if the object is initialized properly
         '''
 
         self.assertEqual(self.new_account.account_name,"farzana")
         self.assertEqual(self.new_account.user_name,"isack")
         self.assertEqual(self.new_account.password,"123456")
-        self.assertEqual(self.new_account.email,"farzana@m.co"
+        self.assertEqual(self.new_account.email,"farzana@m.com")
 
-    def text_save_account(self)
-       '''
+    def text_save_account(self):
+        '''
         test_save_account test case to test if the account object is saved into
          the account list
         '''
@@ -55,24 +55,12 @@ class TestAccount(unittest.TestCase):
             self.new_account.delete_account()# Deleting an account object
             self.assertEqual(len(Account.account_list),1)        
      
-    def test_find_account_by_account_name(self):
-        '''
-        test to check if we can find an account by account_name and display information
-        '''
-
-        self.new_account.save()
-        test_account = Account("Test","user","0707072241","test@user.com") # new account
-        test_account.save_account()
-
-        found_account = Account.find_by_name("Test")
-
-        self.assertEqual(found_account.email,test_account.email)    
     def test_account_exists(self):
         '''
         test to check if we can return a Boolean  if we cannot find the account.
         '''
 
-      self.new_account.save_account()
+        self.new_account.save_account()
         test_account = Account("Test","user","0707072241","test@user.com") # new account
         test_account.save_account()
 

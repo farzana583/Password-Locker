@@ -13,7 +13,7 @@ class TestCredentials(unittest.TestCase):
         test_init test case to test if the object is initialized properly
          '''
 
-          self.assertEqual(self.new_credentials.credentials_name,"Farzana")
+        self.assertEqual(self.new_credentials.credentials_name,"Farzana")
         self.assertEqual(self.new_credentials.usr_name,"Isack")
         self.assertEqual(self.new_credentials.password,"123456")
         self.assertEqual(self.new_credentials.email,"farzana@m.com")
@@ -23,7 +23,7 @@ class TestCredentials(unittest.TestCase):
         test_save_account test case to test if the account object is saved into
          the account list
         '''
- self.new_credentials.save_credentials() # saving the new account
+        self.new_credentials.save_credentials() # saving the new account
         self.assertEqual(len(Credentials.credentials_list),1)  
 
 
@@ -45,7 +45,7 @@ class TestCredentials(unittest.TestCase):
             self.assertEqual(len(Credentials.credentials_list),2)
 
 
-             def test_delete_credentials(self):
+    def test_delete_credentials(self):
             '''
             test_delete_account to test if we can remove an account from our account list
             '''
@@ -67,7 +67,7 @@ class TestCredentials(unittest.TestCase):
 
         found_credentials = Credentials.find_by_name("Test")
          
-          self.assertEqual(found_credentials.email,test_credentials.email)  
+        self.assertEqual(found_credentials.email,test_credentials.email)  
 
 
 
@@ -87,4 +87,5 @@ class TestCredentials(unittest.TestCase):
 
 
 if __name__ == '__main__':
+    unittest.main()
  
